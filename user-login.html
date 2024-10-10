@@ -1,0 +1,773 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estonia Vehicle Rental System - Dashboard</title>
+    <meta name="title" Content="Atech Vehicle Rental System - Dashboard">
+
+    <meta name="description" content="Discover top-notch rentals tailored to your needs on the Vehicle Rental Platform. Start your search now and experience hassle-free leasing like never before!">
+    <meta name="keywords" content="vehicle,rental,platform,car,car rent,bike,truck">
+    <link rel="shortcut icon" href="https://carrental.atechmedia.live/assets/images/logoIcon/favicon.png" type="image/x-icon">
+
+    
+    <link rel="apple-touch-icon" href="https://carrental.atechmedia.live/assets/images/logoIcon/logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Atech Vehicle Rental System - Dashboard">
+    
+    <meta itemprop="name" content="Atech Vehicle Rental System - Dashboard">
+    <meta itemprop="description" content="Discover top-notch rentals tailored to your needs on the Vehicle Rental Platform. Start your search now and experience hassle-free leasing like never before!">
+    <meta itemprop="image" content="https://carrental.atechmedia.live/assets/images/seo/665dbac405f121717418692.png">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Justhire- Vehicle Rental Platform">
+    <meta property="og:description" content="Discover top-notch rentals tailored to your needs on the Vehicle Rental Platform. Start your search now and experience hassle-free leasing like never before!">
+    <meta property="og:image" content="https://carrental.atechmedia.live/assets/images/seo/665dbac405f121717418692.png" />
+    <meta property="og:image:type" content="png" />
+    <meta property="og:image:width" content="1180" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:url" content="https://carrental.atechmedia.live/user/dashboard">
+    
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link href="https://carrental.atechmedia.live/assets/global/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://carrental.atechmedia.live/assets/global/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://carrental.atechmedia.live/assets/global/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="https://carrental.atechmedia.live/assets/templates/basic/css/custom.css">
+    <link href="https://carrental.atechmedia.live/assets/global/css/slick.css" rel="stylesheet">
+    <link href="https://carrental.atechmedia.live/assets/global/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://carrental.atechmedia.live/assets/templates/basic/css/iconmoon.css" />
+    <link rel="stylesheet" href="https://carrental.atechmedia.live/assets/templates/basic/css/odometer.css" />
+    <link rel="stylesheet" href="https://carrental.atechmedia.live/assets/templates/basic/css/lightcase.css" />
+
+        <link rel="stylesheet" href="https://carrental.atechmedia.live/assets/global/css/datepicker.min.css">
+
+    <link rel="stylesheet" href="https://carrental.atechmedia.live/assets/templates/basic/css/main.css" />
+    <link rel="stylesheet" href="https://carrental.atechmedia.live/assets/templates/basic/css/custom.css" />
+
+        <style>
+        #date {
+            border: 1px solid hsl(var(--base-two)/0.1) !important;
+        }
+
+        #date:focus {
+            border: 1px solid hsl(var(--base)) !important;
+        }
+
+
+        .select2-container .select2-selection--single,
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            height: 47px !important;
+        }
+
+        .select2-container--default .select2-selection--single,
+        .select2-container--default .select2-search--dropdown .select2-search__field {
+            border: 1px solid hsl(var(--base-two) / 0.1);
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            line-height: 47px !important;
+        }
+
+        input.select2-search__field {
+            outline: none;
+        }
+
+        .select2-search--dropdown .select2-search__field {
+            padding: 8px 4px;
+        }
+
+        span#select2-brand_id-15-container {
+            outline: none;
+        }
+
+        .select2 .selection {
+            width: 100%;
+        }
+    </style>
+
+    <link href="https://carrental.atechmedia.live/assets/templates/basic/css/color.php?color=fd7921&secondColor=311807" rel="stylesheet">
+
+</head>
+
+<body>
+
+    
+    <div class="preloader">
+        <div class="loader-p"></div>
+    </div>
+    <div class="body-overlay"></div>
+    <div class="sidebar-overlay"></div>
+    <a class="scroll-top"><i class="fas fa-angle-double-up"></i></a>
+
+        <header class="header" id="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            
+            <button class="navbar-toggler header-button" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                <span id="hiddenNav"><i class="las la-bars"></i></span>
+            </button>
+            <div class="offcanvas border-0 offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar">
+                <div class="offcanvas-header">
+                    <a class="logo navbar-brand" href="https://carrental.atechmedia.live"><img src="https://carrental.atechmedia.live/assets/images/logoIcon/logo.png" alt="image" /></a>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav w-100 justify-content-lg-center nav-menu align-items-lg-center">
+                        <li class="navbar-nav__bar"></li>
+                        <li class="language dropdown d-lg-none">
+                                                    </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " aria-current="page" href="https://carrental.atechmedia.live">Home</a>
+                        </li>
+                                                                            <li class="nav-item ">
+                                <a class="nav-link"
+                                   href="https://carrental.atechmedia.live/about">About</a>
+                            </li>
+                                                <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Vehicles                                <span class="nav-item__icon"><i class="las la-angle-down"></i></span>
+                            </a>
+                            <ul class="dropdown-menu header-dropdown">
+                                                                    <li class="dropdown-menu__list">
+                                        <a class="dropdown-item dropdown-menu__link" href="https://carrental.atechmedia.live/vehicles/convertible_1727861596">Convertible</a>
+                                    </li>
+                                                                    <li class="dropdown-menu__list">
+                                        <a class="dropdown-item dropdown-menu__link" href="https://carrental.atechmedia.live/vehicles/specialty-vehicle_1727861517">Specialty Vehicle</a>
+                                    </li>
+                                                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="https://carrental.atechmedia.live/blog">Blog</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="https://carrental.atechmedia.live/contact">Contact</a>
+                        </li>
+                        <li class="nav-item mt-4 d-lg-none">
+                            <div class="header-right d-lg-none">
+                                <div class="header-button flex-align gap-3">
+                                                                            <a href="https://carrental.atechmedia.live/user/dashboard" class="btn btn-outline--base-two">Dashboard</a>
+                                        <a href="https://carrental.atechmedia.live/user/logout" class="btn btn--gradient">Logout</a>
+                                                                    </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-right d-none d-lg-block">
+                <div class="header-button flex-align gap-3">
+                    <div class="language dropdown d-none d-lg-flex">
+                                            </div>
+                                            <a href="https://carrental.atechmedia.live/user/dashboard" class="btn btn-outline--base-two">Dashboard</a>
+                        <a href="https://carrental.atechmedia.live/user/logout" class="btn btn--gradient">Logout</a>
+                                    </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    <main>
+                    <section class="breadcrumb-wrapper style-center">
+    <div class="container">
+        <h2 class="breadcrumb-wrapper__title">Dashboard</h2>
+    </div>
+</section>
+                <section class="dashboard py-120">
+            <div class="container">
+                <div class="dashboard__inner">
+                    <div class="sidebar-menu">
+    <span class="sidebar-menu__close d-lg-none d-block"><i class="fas fa-times"></i></span>
+
+    <div class="auth-user">
+        <div class="auth-user__image">
+            <img src="https://carrental.atechmedia.live/assets/images/avatar.jpg"
+                 alt="profile" />
+        </div>
+        <h5 class="auth-user__name">Ayyan Tanzeel</h5>
+        <p class="auth-user__email">ayyan@gmail.com</p>
+    </div>
+
+    <ul class="sidebar-menu-list">
+        <li class="sidebar-menu-list__item active">
+            <a href="https://carrental.atechmedia.live/user/dashboard" class="sidebar-menu-list__link">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span class="text">Dashboard</span>
+            </a>
+        </li>
+        <li class="sidebar-menu-list__item has-dropdown ">
+            <a href="javascript:void(0)" class="sidebar-menu-list__link">
+                <span class="icon"><i class="fas fa-taxi"></i></span>
+                <span class="text">Manage Vehicle</span>
+            </a>
+            <div class="sidebar-submenu">
+                <ul class="sidebar-submenu-list">
+                    <li class="sidebar-submenu-list__item">
+                        <a href="https://carrental.atechmedia.live/user/vehicle/store"
+                           class="sidebar-submenu-list__link ">
+                            <span class="text">Store</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-submenu-list__item">
+                        <a href="https://carrental.atechmedia.live/user/vehicle/add"
+                           class="sidebar-submenu-list__link ">
+                            <span class="text">Add Vehicle</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-submenu-list__item">
+                        <a href="https://carrental.atechmedia.live/user/vehicle/index"
+                           class="sidebar-submenu-list__link ">
+                            <span class="text">All Vehicles</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+                <li class="sidebar-menu-list__item has-dropdown ">
+            <a href="javascript:void(0)" class="sidebar-menu-list__link">
+                <span class="icon"><i class="fas fa-truck-moving"></i></span>
+                <span class="text">Manage Rental</span>
+                            </a>
+            <div class="sidebar-submenu">
+                <ul class="sidebar-submenu-list">
+                    <li class="sidebar-submenu-list__item">
+                        <a href="https://carrental.atechmedia.live/user/rental/index"
+                           class="sidebar-submenu-list__link ">
+                            <span class="text">All</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-submenu-list__item">
+                        <a href="https://carrental.atechmedia.live/user/rental/pending"
+                           class="sidebar-submenu-list__link ">
+                            <span class="text">Pending</span>
+                                                    </a>
+                    </li>
+
+                    <li class="sidebar-submenu-list__item">
+                        <a href="https://carrental.atechmedia.live/user/rental/approved"
+                           class="sidebar-submenu-list__link ">
+                            <span class="text">Approved</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-submenu-list__item">
+                        <a href="https://carrental.atechmedia.live/user/rental/ongoing"
+                           class="sidebar-submenu-list__link ">
+                            <span class="text">Ongoing</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-submenu-list__item">
+                        <a href="https://carrental.atechmedia.live/user/rental/completed"
+                           class="sidebar-submenu-list__link ">
+                            <span class="text">Completed</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-submenu-list__item">
+                        <a href="https://carrental.atechmedia.live/user/rental/cancelled"
+                           class="sidebar-submenu-list__link ">
+                            <span class="text">Cancelled</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="sidebar-menu-list__item ">
+            <a href="https://carrental.atechmedia.live/user/ongoing/rental/list" class="sidebar-menu-list__link">
+                <span class="icon"><i class="fas fa-list"></i></span>
+                <span class="text">Ongoing Rental</span>
+            </a>
+        </li>
+
+        <li class="sidebar-menu-list__item ">
+            <a href="https://carrental.atechmedia.live/user/rented/history" class="sidebar-menu-list__link">
+                <span class="icon"><i class="fas fa-list"></i></span>
+                <span class="text">My Rented History</span>
+            </a>
+        </li>
+        <li class="sidebar-menu-list__item ">
+            <a href="https://carrental.atechmedia.live/user/review/index" class="sidebar-menu-list__link">
+                <span class="icon"><i class="fas fa-star"></i></span>
+                <span class="text">Reviews</span>
+            </a>
+        </li>
+
+        <li class="sidebar-menu-list__item ">
+            <a href="https://carrental.atechmedia.live/user/payment/history" class="sidebar-menu-list__link">
+                <span class="icon"><i class="fas fa-money-bill-wave"></i></span>
+                <span class="text">Payment History</span>
+            </a>
+        </li>
+        <li class="sidebar-menu-list__item has-dropdown ">
+            <a href="javascript:void(0)" class="sidebar-menu-list__link">
+                <span class="icon"><i class="fas fa-hand-holding-usd"></i></span>
+                <span class="text">Withdraw</span>
+            </a>
+            <div class="sidebar-submenu">
+                <ul class="sidebar-submenu-list">
+                    <li class="sidebar-submenu-list__item">
+                        <a href="https://carrental.atechmedia.live/user/withdraw"
+                           class="sidebar-submenu-list__link ">
+                            <span class="text">Withdraw Money</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-submenu-list__item">
+                        <a href="https://carrental.atechmedia.live/user/withdraw/history"
+                           class="sidebar-submenu-list__link ">
+                            <span class="text">Withdraw History</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="sidebar-menu-list__item has-dropdown ">
+            <a href="javascript:void(0)" class="sidebar-menu-list__link">
+                <span class="icon"><i class="fas fa-ticket-alt"></i></span>
+                <span class="text">Support Ticket</span>
+            </a>
+            <div class="sidebar-submenu">
+                <ul class="sidebar-submenu-list">
+                    <li class="sidebar-submenu-list__item">
+                        <a href="https://carrental.atechmedia.live/ticket/new"
+                           class="sidebar-submenu-list__link ">
+                            <span class="text">Open New Ticket</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-submenu-list__item">
+                        <a href="https://carrental.atechmedia.live/ticket"
+                           class="sidebar-submenu-list__link ">
+                            <span class="text">My Tickets</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="sidebar-menu-list__item ">
+            <a href="https://carrental.atechmedia.live/user/transactions" class="sidebar-menu-list__link">
+                <span class="icon"><i class="fas fa-exchange-alt"></i></span>
+                <span class="text">Transactions</span>
+            </a>
+        </li>
+        <li class="sidebar-menu-list__item ">
+            <a href="https://carrental.atechmedia.live/user/profile-setting" class="sidebar-menu-list__link">
+                <span class="icon"><i class="fas fa-user-alt"></i></span>
+                <span class="text">Profile Setting</span>
+            </a>
+        </li>
+
+        <li class="sidebar-menu-list__item ">
+            <a href="https://carrental.atechmedia.live/user/change-password" class="sidebar-menu-list__link">
+                <span class="icon"><i class="fas fa-key"></i></span>
+                <span class="text">Change Password</span>
+            </a>
+        </li>
+        <li class="sidebar-menu-list__item ">
+            <a href="https://carrental.atechmedia.live/user/twofactor" class="sidebar-menu-list__link">
+                <span class="icon"><i class="fas fa-shield-alt"></i></span>
+                <span class="text">2FA Security</span>
+            </a>
+        </li>
+        <li class="sidebar-menu-list__item ">
+            <a href="https://carrental.atechmedia.live/user/logout" class="sidebar-menu-list__link">
+                <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                <span class="text">Logout</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+                    <div class="dashboard__right">
+                        <div class="dashboard-body">
+                            <div class="dashboard-body__bar navigation-bar d-lg-none d-flex">
+    <span class="dashboard-body__bar-icon"><i class="las la-bars"></i></span>
+    <div class="dashboard-profile">
+        <img src="https://carrental.atechmedia.live/placeholder-image/200x200" alt="profile" />
+        <p class="name">ayyan123</p>
+    </div>
+</div>
+
+                                
+    
+    
+            <div class="card custom--card">
+            <div class="card-header">
+                <h6 class="mb-0">Vehicle Availability</h6>
+            </div>
+            <div class="card-body">
+                <form action="https://carrental.atechmedia.live/vehicles" method="GET">
+                    <div class="d-flex flex-wrap gap-4">
+                        <div class="flex-grow-1">
+                            <label class="form--label">Pick Up</label>
+                            <select class="form--control" name="pick_up_zone_id" required>
+                                <option value="">Select One</option>
+                                                                    <option value="1">Multan</option>
+                                                                    <option value="3">Multan Xity</option>
+                                                                    <option value="4">Kigali Rwanda</option>
+                                                                    <option value="5">Kanombe kigali</option>
+                                                            </select>
+                        </div>
+                        <div class="flex-grow-1">
+                            <label class="form--label">Date</label>
+                            <input name="date" id="date" data-range="true" data-multiple-dates-separator=" - "
+                                   type="text" data-language="en" class="datepicker-here form--control"
+                                   data-position="bottom right" placeholder="Start Date - End Date" required autocomplete="off" />
+                        </div>
+                        <div class="flex-grow-1">
+                            <label class="form--label">Drop off</label>
+                            <select class="form--control select2-basic" name="drop_off_zone_id" required>
+                                <option value="">Select One</option>
+                                                                    <option value="1">Multan</option>
+                                                                    <option value="3">Multan Xity</option>
+                                                                    <option value="4">Kigali Rwanda</option>
+                                                                    <option value="5">Kanombe kigali</option>
+                                                            </select>
+                        </div>
+                        <div class="flex-grow-1 align-self-end">
+                            <button class="btn btn--gradient filter-btn" type="submit">Filter</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+    <div class="mt-4">
+        <div class="row g-3 g-md-4 justify-content-center">
+            <div class="col-md-6 col-sm-6 col-xsm-6">
+                <div class="dashboard-widget">
+                    <div class="dashboard-widget__shape">
+                        <img src="https://carrental.atechmedia.live/assets/images/default.png"
+                             alt="image" />
+                    </div>
+                    <div class="dashboard-widget__icon">
+                        <i class="fas fa-taxi"></i>
+                    </div>
+                    <div class="dashboard-widget__content">
+                        <h4 class="dashboard-widget__number">1</h4>
+                        <span class="dashboard-widget__text">Total Vehicles</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xsm-6">
+                <div class="dashboard-widget">
+                    <div class="dashboard-widget__shape">
+                        <img src="https://carrental.atechmedia.live/assets/images/default.png"
+                             alt="image" />
+                    </div>
+                    <div class="dashboard-widget__icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h4 class="dashboard-widget__number">Ksh0.00</h4>
+                    <span class="dashboard-widget__text">Total Balance</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xsm-6">
+                <div class="dashboard-widget">
+                    <div class="dashboard-widget__shape">
+                        <img src="https://carrental.atechmedia.live/assets/images/default.png"
+                             alt="image" />
+                    </div>
+                    <div class="dashboard-widget__icon">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                    <h4 class="dashboard-widget__number">Ksh0.00
+                    </h4>
+                    <span class="dashboard-widget__text">Total Income</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xsm-6">
+                <div class="dashboard-widget">
+                    <div class="dashboard-widget__shape">
+                        <img src="https://carrental.atechmedia.live/assets/images/default.png"
+                             alt="image" />
+                    </div>
+                    <div class="dashboard-widget__icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h4 class="dashboard-widget__number">
+                        $0.00</h4>
+                    <span class="dashboard-widget__text">Total Withdrawan</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-table mt-4">
+        <div class="custom--card card">
+            <div class="card-header">
+                <h6 class="mb-0">Latest Rental Status</h6>
+            </div>
+            <div class="card-body">
+                <table class="table table--responsive--xl">
+                    <thead>
+                        <tr>
+                            <th>Brand</th>
+                            <th>Rent NO.</th>
+                            <th>Rented By</th>
+                            <th>Price</th>
+                            <th>Expired At</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                    <tr>
+                                <td colspan="100%" class="text-center">Data not found</td>
+                            </tr>
+                                            </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-area">
+    <div class="footer-wrapper bg-img py-120" data-background-image="https://carrental.atechmedia.live/assets/images/frontend/footer/660139ae97f2a1711356334.png">
+        <div class="container">
+            <div class="row justify-content-between gy-5">
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer-item">
+                        <div class="footer-item__logo">
+                            <a href="https://carrental.atechmedia.live"><img src="https://carrental.atechmedia.live/assets/images/logoIcon/logo_white.png" alt="image" /></a>
+                        </div>
+                        <p class="footer-item__desc">Explore our platform for hassle-free vehicle rentals. Book your ride easily and embark on unforgettable journeys with confidence.</p>
+                        <ul class="footer-contact-menu">
+                            <li class="footer-contact-menu__item">
+                                <div class="footer-contact-menu__item-icon">
+                                    <i class="icon-Vector-4"></i>
+                                </div>
+                                <div class="footer-contact-menu__item-content">
+                                    <a href="tel:+1(555)000-0000">+1(555)000-0000</a>
+                                </div>
+                            </li>
+                            <li class="footer-contact-menu__item">
+                                <div class="footer-contact-menu__item-icon">
+                                    <i class="icon-Vector-3"></i>
+                                </div>
+                                <div class="footer-contact-menu__item-content">
+                                    <a href="mailto:hello@relume.io">hello@relume.io</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6 col-xsm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item__title">Quick Links</h5>
+                        <ul class="footer-menu">
+                                                            <li class="footer-menu__item">
+                                    <a href="https://carrental.atechmedia.live/policy/privacy-policy/49" class="footer-menu__link">Privacy Policy</a>
+                                </li>
+                                                            <li class="footer-menu__item">
+                                    <a href="https://carrental.atechmedia.live/policy/terms-of-service/50" class="footer-menu__link">Terms of Service</a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-sm-6 col-xsm-6">
+                    <div class="footer-item">
+                        <h5 class="footer-item__title">Vehicles</h5>
+                        <ul class="footer-menu">
+                                                            <li class="footer-menu__item">
+                                    <a href="https://carrental.atechmedia.live/vehicles/convertible_1727861596" class="footer-menu__link">Convertible</a>
+                                </li>
+                                                            <li class="footer-menu__item">
+                                    <a href="https://carrental.atechmedia.live/vehicles/specialty-vehicle_1727861517" class="footer-menu__link">Specialty Vehicle</a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6">
+                    <div class="footer-item">
+                        <div class="footer-item-social">
+                            <p class="footer-item-social__title">Contact With Us</p>
+                            <ul class="social-list mt-0">
+                                                                    <li class="social-list__item">
+                                        <a href="https://www.facebook.com/" class="social-list__link flex-center" target="_blank">
+                                            <i class="fab fa-facebook-f"></i>                                        </a>
+                                    </li>
+                                                                    <li class="social-list__item">
+                                        <a href="https://www.twitter.com/" class="social-list__link flex-center" target="_blank">
+                                            <i class="fab fa-twitter"></i>                                        </a>
+                                    </li>
+                                                                    <li class="social-list__item">
+                                        <a href="https://www.linkedin.com/" class="social-list__link flex-center" target="_blank">
+                                            <i class="fab fa-linkedin-in"></i>                                        </a>
+                                    </li>
+                                                                    <li class="social-list__item">
+                                        <a href="https://www.instagram.com/" class="social-list__link flex-center" target="_blank">
+                                            <i class="fab fa-instagram"></i>                                        </a>
+                                    </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h5 class="footer-newsletter__title">Subscribe</h5>
+                        <p class="footer-newsletter__desc">Subscribe to our mailing list for the latest updates!</p>
+                    </div>
+                    <form class="footer-newsletter-form">
+                        <input type="email" name="email" class="form--control" placeholder="Email Address" autocomplete="off" />
+                        <button type="button" class="btn btn--gradient subscribeBtn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-footer py-3">
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-md-12 text-center">
+                    <div class="bottom-footer-text text-white">
+                        Copyright &copy; 2024 Atech Media All rights reserved.                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+
+
+    <script src="https://carrental.atechmedia.live/assets/global/js/jquery-3.7.1.min.js"></script>
+    <script src="https://carrental.atechmedia.live/assets/global/js/bootstrap.bundle.min.js"></script>
+    <script src="https://carrental.atechmedia.live/assets/global/js/select2.min.js"></script>
+
+        <script src="https://carrental.atechmedia.live/assets/global/js/datepicker.min.js"></script>
+    <script src="https://carrental.atechmedia.live/assets/global/js/datepicker.en.js"></script>
+        <link rel="stylesheet" href="https://carrental.atechmedia.live/assets/global/css/iziToast.min.css">
+<script src="https://carrental.atechmedia.live/assets/global/js/iziToast.min.js"></script>
+
+<script>
+    "use strict";
+    function notify(status,message) {
+        if (typeof message == 'string') {
+            iziToast[status]({
+                message: message,
+                position: "topRight"
+            });
+        } else {
+            $.each(message, function(i, val) {
+                iziToast[status]({
+                    message: val,
+                    position: "topRight"
+                });
+            });
+        }
+    }
+</script>
+
+    <script src="https://carrental.atechmedia.live/assets/global/js/slick.min.js"></script>
+    <script src="https://carrental.atechmedia.live/assets/templates/basic/js/odometer.min.js"></script>
+    <script src="https://carrental.atechmedia.live/assets/templates/basic/js/viewport.jquery.js"></script>
+    <script src="https://carrental.atechmedia.live/assets/templates/basic/js/lightcase.js"></script>
+    <script src="https://carrental.atechmedia.live/assets/templates/basic/js/main.js"></script>
+
+        <script>
+        (function($) {
+            "use strict";
+            $(".select2-basic").select2({
+                width: "100%",
+            });
+
+            $('.datepicker-here').datepicker({
+                changeYear: true,
+                changeMonth: true,
+                minDate: new Date(),
+            });
+        })(jQuery)
+    </script>
+    <script>
+        (function($) {
+            "use strict";
+            $('.subscribeBtn').on('click', function(e) {
+                e.preventDefault()
+                var email = $('[name=email]').val();
+                if (!email) {
+                    return;
+                }
+                $.ajax({
+                    url: "https://carrental.atechmedia.live/subscribe",
+                    method: "POST",
+                    data: {
+                        _token: "yAYVfYgwf8Rcq6rxJzRuwJ8XzPTaNqrLguYTFpu6",
+                        email: email
+                    },
+                    success: function(response) {
+                        if (response.success) {
+                            $('[name=email]').val('')
+                            notify('success', response.success);
+                        } else {
+                            notify('error', response.error);
+                        }
+                    }
+                });
+            });
+        })(jQuery)
+    </script>
+    <script>
+        (function($) {
+            "use strict";
+            $('.showFilterBtn').on('click', function() {
+                $('.responsive-filter-card').slideToggle();
+            });
+
+            Array.from(document.querySelectorAll('table')).forEach(table => {
+                let heading = table.querySelectorAll('thead tr th');
+                Array.from(table.querySelectorAll('tbody tr')).forEach((row) => {
+                    Array.from(row.querySelectorAll('td')).forEach((colum, i) => {
+                        colum.setAttribute('data-label', heading[i].innerText)
+                    });
+                });
+            });
+        })(jQuery)
+    </script>
+
+    <script>
+        (function($) {
+            "use strict";
+            $(".langSel").on("click", function() {
+                window.location.href = "https://carrental.atechmedia.live/change/" + $(this).data('lang_code');
+            });
+
+            $('.policy').on('click', function() {
+                $.get('https://carrental.atechmedia.live/cookie/accept', function(response) {
+                    $('.cookies-card').addClass('d-none');
+                });
+            });
+
+            setTimeout(function() {
+                $('.cookies-card').removeClass('hide')
+            }, 2000);
+
+            var inputElements = $('[type=text],select,textarea');
+            $.each(inputElements, function(index, element) {
+                element = $(element);
+                element.closest('.form-group').find('label').attr('for', element.attr('name'));
+                element.attr('id', element.attr('name'))
+            });
+
+            $.each($('input, select, textarea'), function(i, element) {
+                var elementType = $(element);
+                if (elementType.attr('type') != 'checkbox') {
+                    if (element.hasAttribute('required')) {
+                        $(element).closest('.form-group').find('label').addClass('required');
+                    }
+                }
+            });
+        })(jQuery);
+    </script>
+</body>
+
+</html>

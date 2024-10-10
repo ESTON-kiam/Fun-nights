@@ -1,0 +1,1734 @@
+
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atech Vehicle Rental System - Dashboard</title>
+
+    <link rel="shortcut icon" type="image/png" href="https://carrental.atechmedia.live/assets/images/logoIcon/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://carrental.atechmedia.live/assets/global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://carrental.atechmedia.live/assets/admin/css/vendor/bootstrap-toggle.min.css">
+    <link rel="stylesheet" href="https://carrental.atechmedia.live/assets/global/css/all.min.css">
+    <link rel="stylesheet" href="https://carrental.atechmedia.live/assets/global/css/line-awesome.min.css">
+
+    
+    <link href="https://carrental.atechmedia.live/assets/global/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://carrental.atechmedia.live/assets/admin/css/app.css">
+
+
+    </head>
+
+<body>
+        <!-- page-wrapper start -->
+    <div class="page-wrapper default-version">
+        <div class="sidebar bg--dark">
+    <button class="res-sidebar-close-btn"><i class="las la-times"></i></button>
+    <div class="sidebar__inner">
+        <div class="sidebar__logo">
+            <a href="https://carrental.atechmedia.live/admin/dashboard" class="sidebar__main-logo"><img src="https://carrental.atechmedia.live/assets/images/logoIcon/logo_white.png" alt="image"></a>
+        </div>
+
+        <div class="sidebar__menu-wrapper" id="sidebar__menuWrapper">
+            <ul class="sidebar__menu">
+                <li class="sidebar-menu-item active">
+                    <a href="https://carrental.atechmedia.live/admin/dashboard" class="nav-link ">
+                        <i class="menu-icon las la-home"></i>
+                        <span class="menu-title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item ">
+                    <a href="https://carrental.atechmedia.live/admin/vehicle/type/index" class="nav-link ">
+                        <i class="menu-icon las la-stream"></i>
+                        <span class="menu-title">Vehicle Types</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item ">
+                    <a href="https://carrental.atechmedia.live/admin/vehicle/class/index" class="nav-link ">
+                        <i class="menu-icon las la-bezier-curve"></i>
+                        <span class="menu-title">Vehicle Classes</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item ">
+                    <a href="https://carrental.atechmedia.live/admin/zone" class="nav-link ">
+                        <i class="menu-icon las la-map-marked-alt"></i>
+                        <span class="menu-title">Zones</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item ">
+                    <a href="https://carrental.atechmedia.live/admin/brand" class="nav-link ">
+                        <i class="menu-icon las la-industry"></i>
+                        <span class="menu-title">Brand</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item sidebar-dropdown">
+                    <a href="javascript:void(0)" class="">
+                        <i class="menu-icon las la-store"></i>
+                        <span class="menu-title">Manage Stores</span>
+                                            </a>
+                    <div class="sidebar-submenu  ">
+                        <ul>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/store" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">All Stores</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/store/pending" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Pending Stores</span>
+                                                                    </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/store/approved" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Approved Stores</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/store/rejected" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Rejected Stores</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="sidebar-menu-item sidebar-dropdown">
+                    <a href="javascript:void(0)" class="">
+                        <i class="menu-icon las la-car-side"></i>
+                        <span class="menu-title">Manage Vehicles</span>
+                                            </a>
+                    <div class="sidebar-submenu  ">
+                        <ul>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/vehicle" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">All Vehicles</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/vehicle/pending" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Pending Vehicles</span>
+                                                                    </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/vehicle/approved" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Approved Vehicles</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/vehicle/rejected" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Rejected Vehicles</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="sidebar-menu-item sidebar-dropdown">
+                    <a href="javascript:void(0)" class="">
+                        <i class="menu-icon las la-users"></i>
+                        <span class="menu-title">Manage Users</span>
+
+                                            </a>
+                    <div class="sidebar-submenu  ">
+                        <ul>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/users/active" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Active Users</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/users/banned" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Banned Users</span>
+                                                                    </a>
+                            </li>
+
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/users/email-unverified" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Email Unverified</span>
+
+                                                                    </a>
+                            </li>
+
+                            <li class="sidebar-menu-item ">
+                                <a href="https://carrental.atechmedia.live/admin/users/mobile-unverified" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Mobile Unverified</span>
+                                                                    </a>
+                            </li>
+
+                            <li class="sidebar-menu-item ">
+                                <a href="https://carrental.atechmedia.live/admin/users/kyc-unverified" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">KYC Unverified</span>
+                                                                    </a>
+                            </li>
+
+                            <li class="sidebar-menu-item ">
+                                <a href="https://carrental.atechmedia.live/admin/users/kyc-pending" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">KYC Pending</span>
+                                                                    </a>
+                            </li>
+
+                            <li class="sidebar-menu-item ">
+                                <a href="https://carrental.atechmedia.live/admin/users/with-balance" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">With Balance</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/users" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">All Users</span>
+                                </a>
+                            </li>
+
+
+                            <li class="sidebar-menu-item ">
+                                <a href="https://carrental.atechmedia.live/admin/users/send-notification" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Notification to All</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="sidebar-menu-item sidebar-dropdown">
+                    <a href="javascript:void(0)" class="">
+                        <i class="menu-icon las la-list-ol"></i>
+                        <span class="menu-title">Manage Rentals</span>
+                                            </a>
+                    <div class="sidebar-submenu  ">
+                        <ul>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/rental" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">All Rentals</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/rental/pending" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Pending Rentals</span>
+                                                                    </a>
+                            </li>
+
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/rental/approved" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Approved Rental</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-menu-item ">
+                                <a href="https://carrental.atechmedia.live/admin/rental/ongoing" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Ongoing Rental</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item ">
+                                <a href="https://carrental.atechmedia.live/admin/rental/completed" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Completed Rental</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-menu-item ">
+                                <a href="https://carrental.atechmedia.live/admin/rental/cancelled" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Cancelled Rental</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="sidebar-menu-item sidebar-dropdown">
+                    <a href="javascript:void(0)" class="">
+                        <i class="menu-icon las la-credit-card"></i>
+                        <span class="menu-title">Payment Gateways</span>
+                    </a>
+                    <div class="sidebar-submenu  ">
+                        <ul>
+
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/gateway/automatic" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Automatic Gateways</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/gateway/manual" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Manual Gateways</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="sidebar-menu-item sidebar-dropdown">
+                    <a href="javascript:void(0)" class="">
+                        <i class="menu-icon las la-file-invoice-dollar"></i>
+                        <span class="menu-title">Payments</span>
+                                            </a>
+                    <div class="sidebar-submenu  ">
+                        <ul>
+
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/payment/pending" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Pending Payments</span>
+                                                                    </a>
+                            </li>
+
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/payment/approved" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Approved Payments</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/payment/successful" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Successful Payments</span>
+                                </a>
+                            </li>
+
+
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/payment/rejected" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Rejected Payments</span>
+                                </a>
+                            </li>
+
+
+                            <li class="sidebar-menu-item  ">
+
+                                <a href="https://carrental.atechmedia.live/admin/payment/initiated" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Initiated Payments</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/payment" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">All Payments</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="sidebar-menu-item sidebar-dropdown">
+                    <a href="javascript:void(0)" class="">
+                        <i class="menu-icon la la-bank"></i>
+                        <span class="menu-title">Withdrawals </span>
+                                            </a>
+                    <div class="sidebar-submenu  ">
+                        <ul>
+
+                            <li class="sidebar-menu-item ">
+                                <a href="https://carrental.atechmedia.live/admin/withdraw/method" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Withdrawal Methods</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/withdraw/pending" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Pending Withdrawals</span>
+
+                                                                    </a>
+                            </li>
+
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/withdraw/approved" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Approved Withdrawals</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/withdraw/rejected" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Rejected Withdrawals</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/withdraw/log" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">All Withdrawals</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="sidebar-menu-item sidebar-dropdown">
+                    <a href="javascript:void(0)" class="">
+                        <i class="menu-icon la la-ticket"></i>
+                        <span class="menu-title">Support Ticket </span>
+                                            </a>
+                    <div class="sidebar-submenu  ">
+                        <ul>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/ticket/pending" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Pending Ticket</span>
+                                                                    </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/ticket/closed" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Closed Ticket</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/ticket/answered" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Answered Ticket</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/ticket" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">All Ticket</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <li class="sidebar-menu-item sidebar-dropdown">
+                    <a href="javascript:void(0)" class="">
+                        <i class="menu-icon la la-list"></i>
+                        <span class="menu-title">Report </span>
+                    </a>
+                    <div class="sidebar-submenu  ">
+                        <ul>
+                            <li class="sidebar-menu-item ">
+                                <a href="https://carrental.atechmedia.live/admin/report/transaction" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Transaction Log</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-menu-item ">
+                                <a href="https://carrental.atechmedia.live/admin/report/login/history" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Login History</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-menu-item ">
+                                <a href="https://carrental.atechmedia.live/admin/report/notification/history" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Notification History</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+
+                <li class="sidebar-menu-item  ">
+                    <a href="https://carrental.atechmedia.live/admin/subscriber" class="nav-link"
+                       data-default-url="https://carrental.atechmedia.live/admin/subscriber">
+                        <i class="menu-icon las la-thumbs-up"></i>
+                        <span class="menu-title">Subscribers </span>
+                    </a>
+                </li>
+
+
+                <li class="sidebar__menu-header">Settings</li>
+
+                <li class="sidebar-menu-item ">
+                    <a href="https://carrental.atechmedia.live/admin/general-setting" class="nav-link">
+                        <i class="menu-icon las la-life-ring"></i>
+                        <span class="menu-title">General Setting</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item ">
+                    <a class="nav-link" href="https://carrental.atechmedia.live/admin/social/credentials">
+                        <i class="menu-icon las la-users-cog"></i>
+                        <span class="menu-title">Social Credentials</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item ">
+                    <a href="https://carrental.atechmedia.live/admin/setting/system-configuration" class="nav-link">
+                        <i class="menu-icon las la-cog"></i>
+                        <span class="menu-title">System Configuration</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item ">
+                    <a href="https://carrental.atechmedia.live/admin/setting/logo-icon" class="nav-link">
+                        <i class="menu-icon las la-images"></i>
+                        <span class="menu-title">Logo & Favicon</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item ">
+                    <a href="https://carrental.atechmedia.live/admin/extensions" class="nav-link">
+                        <i class="menu-icon las la-cogs"></i>
+                        <span class="menu-title">Extensions</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item  ">
+                    <a href="https://carrental.atechmedia.live/admin/language" class="nav-link"
+                       data-default-url="https://carrental.atechmedia.live/admin/language">
+                        <i class="menu-icon las la-language"></i>
+                        <span class="menu-title">Language </span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item ">
+                    <a href="https://carrental.atechmedia.live/admin/seo" class="nav-link">
+                        <i class="menu-icon las la-globe"></i>
+                        <span class="menu-title">SEO Manager</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item sidebar-dropdown">
+                    <a href="javascript:void(0)" class="">
+                        <i class="menu-icon las la-user-check"></i>
+                        <span class="menu-title">KYC Setting </span>
+                    </a>
+                    <div class="sidebar-submenu  ">
+                        <ul>
+                            <li class="sidebar-menu-item ">
+                                <a href="https://carrental.atechmedia.live/admin/kyc-setting" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">User</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-menu-item ">
+                                <a href="https://carrental.atechmedia.live/admin/kyc/store" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Vehicle Store</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <li class="sidebar-menu-item sidebar-dropdown">
+                    <a href="javascript:void(0)" class="">
+                        <i class="menu-icon las la-bell"></i>
+                        <span class="menu-title">Notification Setting</span>
+                    </a>
+                    <div class="sidebar-submenu  ">
+                        <ul>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/notification/global" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Global Template</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/notification/email/setting" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Email Setting</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/notification/sms/setting" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">SMS Setting</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/notification/templates" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Notification Templates</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="sidebar__menu-header">Frontend Manager</li>
+
+                <li class="sidebar-menu-item ">
+                    <a href="https://carrental.atechmedia.live/admin/frontend/templates" class="nav-link ">
+                        <i class="menu-icon la la-html5"></i>
+                        <span class="menu-title">Manage Templates</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item ">
+                    <a href="https://carrental.atechmedia.live/admin/frontend/manage-pages" class="nav-link ">
+                        <i class="menu-icon la la-list"></i>
+                        <span class="menu-title">Manage Pages</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item sidebar-dropdown">
+                    <a href="javascript:void(0)" class="">
+                        <i class="menu-icon la la-puzzle-piece"></i>
+                        <span class="menu-title">Manage Section</span>
+                    </a>
+                    <div class="sidebar-submenu  ">
+                        <ul>
+                                                                                                                            <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/about" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">About Us</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/banned" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Banned Page</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/banner" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Banner Section</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/blog" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Blog Section</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/contact_us" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Contact Us</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/cta" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Call to Action</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/cta_contact" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Call to Contact</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/faq" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">FAQ Section</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/feature" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Feature Section</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/footer" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Footer</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/how_to_work" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">How to Work</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/kyc" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">KYC Content</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/login" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Login Page</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/partner" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Partner Section</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/policy_pages" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Policy Pages</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/register" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Register Page</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/service" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Service Section</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/social_icon" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Social Icons</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/support" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Support Section</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/testimonial" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Testimonial</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/vehicle" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Vehicle Section</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/vehicle_store" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Vehicle Store Content</span>
+                                        </a>
+                                    </li>
+                                                                                                                                <li class="sidebar-menu-item   ">
+                                        <a href="https://carrental.atechmedia.live/admin/frontend/frontend-sections/why_choose_us" class="nav-link">
+                                            <i class="menu-icon las la-dot-circle"></i>
+                                            <span class="menu-title">Why Choose Us</span>
+                                        </a>
+                                    </li>
+                                                                                    </ul>
+                    </div>
+                </li>
+
+                <li class="sidebar__menu-header">Extra</li>
+
+                <li class="sidebar-menu-item ">
+                    <a href="https://carrental.atechmedia.live/admin/maintenance-mode" class="nav-link">
+                        <i class="menu-icon las la-robot"></i>
+                        <span class="menu-title">Maintenance Mode</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item ">
+                    <a href="https://carrental.atechmedia.live/admin/cookie" class="nav-link">
+                        <i class="menu-icon las la-cookie-bite"></i>
+                        <span class="menu-title">GDPR Cookie</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item sidebar-dropdown">
+                    <a href="javascript:void(0)" class="">
+                        <i class="menu-icon la la-server"></i>
+                        <span class="menu-title">System</span>
+                    </a>
+                    <div class="sidebar-submenu  ">
+                        <ul>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/system/info" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Application</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/system/server-info" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Server</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-menu-item  ">
+                                <a href="https://carrental.atechmedia.live/admin/system/optimize" class="nav-link">
+                                    <i class="menu-icon las la-dot-circle"></i>
+                                    <span class="menu-title">Cache</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="sidebar-menu-item ">
+                    <a href="https://carrental.atechmedia.live/admin/custom-css" class="nav-link">
+                        <i class="menu-icon lab la-css3-alt"></i>
+                        <span class="menu-title">Custom CSS</span>
+                    </a>
+                </li>
+
+               
+            </ul>
+            
+        </div>
+    </div>
+</div>
+<!-- sidebar end -->
+
+        <!-- navbar-wrapper start -->
+<nav class="navbar-wrapper bg--dark">
+    <div class="navbar__left">
+        <button type="button" class="res-sidebar-open-btn me-3"><i class="las la-bars"></i></button>
+        <form class="navbar-search">
+            <input type="search" name="#0" class="navbar-search-field" id="searchInput" autocomplete="off"
+                placeholder="Search here...">
+            <i class="las la-search"></i>
+            <ul class="search-list"></ul>
+        </form>
+    </div>
+    <div class="navbar__right">
+        <ul class="navbar__action-list">
+
+            <li class="dropdown">
+                <button type="button" class="primary--layer" data-bs-toggle="dropdown" data-display="static"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="las la-bell text--primary  icon-left-right "></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu--md p-0 border-0 box--shadow1 dropdown-menu-right">
+                    <div class="dropdown-menu__header">
+                        <span class="caption">Notification</span>
+                                                    <p>You have 9 unread notification</p>
+                                            </div>
+                    <div class="dropdown-menu__body">
+                                                    <a href="https://carrental.atechmedia.live/admin/notification/read/9"
+                                class="dropdown-menu__item">
+                                <div class="navbar-notifi">
+                                    <div class="navbar-notifi__right">
+                                        <h6 class="notifi__title">New member registered</h6>
+                                        <span class="time"><i class="far fa-clock"></i>
+                                            8 hours ago</span>
+                                    </div>
+                                </div><!-- navbar-notifi end -->
+                            </a>
+                                                    <a href="https://carrental.atechmedia.live/admin/notification/read/8"
+                                class="dropdown-menu__item">
+                                <div class="navbar-notifi">
+                                    <div class="navbar-notifi__right">
+                                        <h6 class="notifi__title">New member registered</h6>
+                                        <span class="time"><i class="far fa-clock"></i>
+                                            1 day ago</span>
+                                    </div>
+                                </div><!-- navbar-notifi end -->
+                            </a>
+                                                    <a href="https://carrental.atechmedia.live/admin/notification/read/7"
+                                class="dropdown-menu__item">
+                                <div class="navbar-notifi">
+                                    <div class="navbar-notifi__right">
+                                        <h6 class="notifi__title">New store has created by fredalex</h6>
+                                        <span class="time"><i class="far fa-clock"></i>
+                                            1 day ago</span>
+                                    </div>
+                                </div><!-- navbar-notifi end -->
+                            </a>
+                                                    <a href="https://carrental.atechmedia.live/admin/notification/read/6"
+                                class="dropdown-menu__item">
+                                <div class="navbar-notifi">
+                                    <div class="navbar-notifi__right">
+                                        <h6 class="notifi__title">New member registered</h6>
+                                        <span class="time"><i class="far fa-clock"></i>
+                                            1 day ago</span>
+                                    </div>
+                                </div><!-- navbar-notifi end -->
+                            </a>
+                                                    <a href="https://carrental.atechmedia.live/admin/notification/read/5"
+                                class="dropdown-menu__item">
+                                <div class="navbar-notifi">
+                                    <div class="navbar-notifi__right">
+                                        <h6 class="notifi__title">New member registered</h6>
+                                        <span class="time"><i class="far fa-clock"></i>
+                                            1 day ago</span>
+                                    </div>
+                                </div><!-- navbar-notifi end -->
+                            </a>
+                                                    <a href="https://carrental.atechmedia.live/admin/notification/read/4"
+                                class="dropdown-menu__item">
+                                <div class="navbar-notifi">
+                                    <div class="navbar-notifi__right">
+                                        <h6 class="notifi__title">New member registered</h6>
+                                        <span class="time"><i class="far fa-clock"></i>
+                                            4 days ago</span>
+                                    </div>
+                                </div><!-- navbar-notifi end -->
+                            </a>
+                                                    <a href="https://carrental.atechmedia.live/admin/notification/read/3"
+                                class="dropdown-menu__item">
+                                <div class="navbar-notifi">
+                                    <div class="navbar-notifi__right">
+                                        <h6 class="notifi__title">New vehicle added viaayyan123</h6>
+                                        <span class="time"><i class="far fa-clock"></i>
+                                            6 days ago</span>
+                                    </div>
+                                </div><!-- navbar-notifi end -->
+                            </a>
+                                                    <a href="https://carrental.atechmedia.live/admin/notification/read/2"
+                                class="dropdown-menu__item">
+                                <div class="navbar-notifi">
+                                    <div class="navbar-notifi__right">
+                                        <h6 class="notifi__title">New store has created by ayyan123</h6>
+                                        <span class="time"><i class="far fa-clock"></i>
+                                            6 days ago</span>
+                                    </div>
+                                </div><!-- navbar-notifi end -->
+                            </a>
+                                                    <a href="https://carrental.atechmedia.live/admin/notification/read/1"
+                                class="dropdown-menu__item">
+                                <div class="navbar-notifi">
+                                    <div class="navbar-notifi__right">
+                                        <h6 class="notifi__title">New member registered</h6>
+                                        <span class="time"><i class="far fa-clock"></i>
+                                            1 week ago</span>
+                                    </div>
+                                </div><!-- navbar-notifi end -->
+                            </a>
+                                            </div>
+                    <div class="dropdown-menu__footer">
+                        <a href="https://carrental.atechmedia.live/admin/notifications"
+                            class="view-all-message">View all notification</a>
+                    </div>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button type="button" class="" data-bs-toggle="dropdown" data-display="static" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="navbar-user">
+                        <span class="navbar-user__thumb"><img
+                                src="https://carrental.atechmedia.live/assets/admin/images/profile/665db9865182a1717418374.png"
+                                alt="image"></span>
+                        <span class="navbar-user__info">
+                            <span
+                                class="navbar-user__name">admin@gmail.com</span>
+                        </span>
+                        <span class="icon"><i class="las la-chevron-circle-down"></i></span>
+                    </span>
+                </button>
+                <div class="dropdown-menu dropdown-menu--sm p-0 border-0 box--shadow1 dropdown-menu-right">
+                    <a href="https://carrental.atechmedia.live/admin/profile"
+                        class="dropdown-menu__item d-flex align-items-center px-3 py-2">
+                        <i class="dropdown-menu__icon las la-user-circle"></i>
+                        <span class="dropdown-menu__caption">Profile</span>
+                    </a>
+
+                    <a href="https://carrental.atechmedia.live/admin/password"
+                        class="dropdown-menu__item d-flex align-items-center px-3 py-2">
+                        <i class="dropdown-menu__icon las la-key"></i>
+                        <span class="dropdown-menu__caption">Password</span>
+                    </a>
+
+                    <a href="https://carrental.atechmedia.live/admin/logout"
+                        class="dropdown-menu__item d-flex align-items-center px-3 py-2">
+                        <i class="dropdown-menu__icon las la-sign-out-alt"></i>
+                        <span class="dropdown-menu__caption">Logout</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- navbar-wrapper end -->
+
+        <div class="body-wrapper">
+            <div class="bodywrapper__inner">
+
+                <div class="d-flex mb-30 flex-wrap gap-3 justify-content-between align-items-center">
+    <h6 class="page-title">Dashboard</h6>
+    <div class="d-flex flex-wrap justify-content-end gap-2 align-items-center breadcrumb-plugins">
+            </div>
+</div>
+
+                        
+    <div class="row gy-4">
+        <div class="col-xxl-3 col-sm-6">
+            <div class="widget-two box--shadow2 b-radius--5 bg--white">
+            <i class="las la-users f-size--56 overlay-icon text--primary"></i>
+    
+    <div class="widget-two__icon b-radius--5   border border--primary text--primary  ">
+        <i class="las la-users f-size--56"></i>
+    </div>
+
+    <div class="widget-two__content">
+        <h3>6</h3>
+        <p>Total Users</p>
+    </div>
+
+            <a href="https://carrental.atechmedia.live/admin/users" class="widget-two__btn btn btn-outline--primary">View All</a>
+    </div>
+
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+            <div class="widget-two box--shadow2 b-radius--5 bg--white">
+            <i class="las la-user-check f-size--56 overlay-icon text--success"></i>
+    
+    <div class="widget-two__icon b-radius--5   border border--success text--success  ">
+        <i class="las la-user-check f-size--56"></i>
+    </div>
+
+    <div class="widget-two__content">
+        <h3>6</h3>
+        <p>Active Users</p>
+    </div>
+
+            <a href="https://carrental.atechmedia.live/admin/users/active" class="widget-two__btn btn btn-outline--success">View All</a>
+    </div>
+
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+            <div class="widget-two box--shadow2 b-radius--5 bg--white">
+            <i class="lar la-envelope f-size--56 overlay-icon text--danger"></i>
+    
+    <div class="widget-two__icon b-radius--5   border border--danger text--danger  ">
+        <i class="lar la-envelope f-size--56"></i>
+    </div>
+
+    <div class="widget-two__content">
+        <h3>0</h3>
+        <p>Email Unverified Users</p>
+    </div>
+
+            <a href="https://carrental.atechmedia.live/admin/users/email-unverified" class="widget-two__btn btn btn-outline--danger">View All</a>
+    </div>
+
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+            <div class="widget-two box--shadow2 b-radius--5 bg--white">
+            <i class="las la-comment-slash f-size--56 overlay-icon text--red"></i>
+    
+    <div class="widget-two__icon b-radius--5   border border--red text--red  ">
+        <i class="las la-comment-slash f-size--56"></i>
+    </div>
+
+    <div class="widget-two__content">
+        <h3>0</h3>
+        <p>Mobile Unverified Users</p>
+    </div>
+
+            <a href="https://carrental.atechmedia.live/admin/users/mobile-unverified" class="widget-two__btn btn btn-outline--red">View All</a>
+    </div>
+
+        </div>
+    </div>
+
+    <div class="row gy-4 mt-2">
+        <div class="col-xxl-3 col-sm-6">
+            <div class="widget-two box--shadow2 b-radius--5 bg--white">
+            <i class="fas fa-hand-holding-usd overlay-icon text--success"></i>
+    
+    <div class="widget-two__icon b-radius--5   bg--success  ">
+        <i class="fas fa-hand-holding-usd"></i>
+    </div>
+
+    <div class="widget-two__content">
+        <h3>$0.00</h3>
+        <p>Total Payment</p>
+    </div>
+
+            <a href="https://carrental.atechmedia.live/admin/payment" class="widget-two__btn btn btn-outline--success">View All</a>
+    </div>
+
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+            <div class="widget-two box--shadow2 b-radius--5 bg--white">
+            <i class="fas fa-spinner overlay-icon text--warning"></i>
+    
+    <div class="widget-two__icon b-radius--5   bg--warning  ">
+        <i class="fas fa-spinner"></i>
+    </div>
+
+    <div class="widget-two__content">
+        <h3>0</h3>
+        <p>Pending Payments</p>
+    </div>
+
+            <a href="https://carrental.atechmedia.live/admin/payment/pending" class="widget-two__btn btn btn-outline--warning">View All</a>
+    </div>
+
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+            <div class="widget-two box--shadow2 b-radius--5 bg--white">
+            <i class="fas fa-ban overlay-icon text--danger"></i>
+    
+    <div class="widget-two__icon b-radius--5   bg--danger  ">
+        <i class="fas fa-ban"></i>
+    </div>
+
+    <div class="widget-two__content">
+        <h3>0</h3>
+        <p>Rejected Payments</p>
+    </div>
+
+            <a href="https://carrental.atechmedia.live/admin/payment/rejected" class="widget-two__btn btn btn-outline--danger">View All</a>
+    </div>
+
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+            <div class="widget-two box--shadow2 b-radius--5 bg--white">
+            <i class="fas fa-percentage overlay-icon text--primary"></i>
+    
+    <div class="widget-two__icon b-radius--5   bg--primary  ">
+        <i class="fas fa-percentage"></i>
+    </div>
+
+    <div class="widget-two__content">
+        <h3>$0.00</h3>
+        <p>Paymented Charge</p>
+    </div>
+
+            <a href="https://carrental.atechmedia.live/admin/payment" class="widget-two__btn btn btn-outline--primary">View All</a>
+    </div>
+
+        </div>
+    </div>
+
+    <div class="row gy-4 mt-2">
+        <div class="col-xxl-3 col-sm-6">
+            <div class="widget-two box--shadow2 b-radius--5 bg--white">
+            <i class="lar la-credit-card overlay-icon text--success"></i>
+    
+    <div class="widget-two__icon b-radius--5   border border--success text--success  ">
+        <i class="lar la-credit-card"></i>
+    </div>
+
+    <div class="widget-two__content">
+        <h3>$0.00</h3>
+        <p>Total Withdrawn</p>
+    </div>
+
+            <a href="https://carrental.atechmedia.live/admin/withdraw/log" class="widget-two__btn btn btn-outline--success">View All</a>
+    </div>
+
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+            <div class="widget-two box--shadow2 b-radius--5 bg--white">
+            <i class="las la-sync overlay-icon text--warning"></i>
+    
+    <div class="widget-two__icon b-radius--5   border border--warning text--warning  ">
+        <i class="las la-sync"></i>
+    </div>
+
+    <div class="widget-two__content">
+        <h3>0</h3>
+        <p>Pending Withdrawals</p>
+    </div>
+
+            <a href="https://carrental.atechmedia.live/admin/withdraw/pending" class="widget-two__btn btn btn-outline--warning">View All</a>
+    </div>
+
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+            <div class="widget-two box--shadow2 b-radius--5 bg--white">
+            <i class="las la-times-circle overlay-icon text--danger"></i>
+    
+    <div class="widget-two__icon b-radius--5   border border--danger text--danger  ">
+        <i class="las la-times-circle"></i>
+    </div>
+
+    <div class="widget-two__content">
+        <h3>0</h3>
+        <p>Rejected Withdrawals</p>
+    </div>
+
+            <a href="https://carrental.atechmedia.live/admin/withdraw/rejected" class="widget-two__btn btn btn-outline--danger">View All</a>
+    </div>
+
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+            <div class="widget-two box--shadow2 b-radius--5 bg--white">
+            <i class="las la-percent overlay-icon text--primary"></i>
+    
+    <div class="widget-two__icon b-radius--5   border border--primary text--primary  ">
+        <i class="las la-percent"></i>
+    </div>
+
+    <div class="widget-two__content">
+        <h3>$0.00</h3>
+        <p>Withdrawal Charge</p>
+    </div>
+
+            <a href="https://carrental.atechmedia.live/admin/withdraw/log" class="widget-two__btn btn btn-outline--primary">View All</a>
+    </div>
+
+        </div>
+    </div>
+
+    <div class="row gy-4 mt-2">
+        <div class="col-xxl-3 col-sm-6">
+            <div class="widget-two box--shadow2 b-radius--5 bg--white">
+            <i class="las la-car overlay-icon text--primary"></i>
+    
+    <div class="widget-two__icon b-radius--5   bg--primary  ">
+        <i class="las la-car"></i>
+    </div>
+
+    <div class="widget-two__content">
+        <h3>1</h3>
+        <p>Total Vehicle</p>
+    </div>
+
+            <a href="https://carrental.atechmedia.live/admin/vehicle" class="widget-two__btn btn btn-outline--primary">View All</a>
+    </div>
+
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+            <div class="widget-two box--shadow2 b-radius--5 bg--white">
+            <i class="las la-hourglass-end overlay-icon text--warning"></i>
+    
+    <div class="widget-two__icon b-radius--5   bg--warning  ">
+        <i class="las la-hourglass-end"></i>
+    </div>
+
+    <div class="widget-two__content">
+        <h3>0</h3>
+        <p>Pending Vehicle</p>
+    </div>
+
+            <a href="https://carrental.atechmedia.live/admin/vehicle/pending" class="widget-two__btn btn btn-outline--warning">View All</a>
+    </div>
+
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+            <div class="widget-two box--shadow2 b-radius--5 bg--white">
+            <i class="las la-check-circle overlay-icon text--success"></i>
+    
+    <div class="widget-two__icon b-radius--5   bg--success  ">
+        <i class="las la-check-circle"></i>
+    </div>
+
+    <div class="widget-two__content">
+        <h3>1</h3>
+        <p>Approved Vehicle</p>
+    </div>
+
+            <a href="https://carrental.atechmedia.live/admin/vehicle/approved" class="widget-two__btn btn btn-outline--success">View All</a>
+    </div>
+
+        </div>
+        <div class="col-xxl-3 col-sm-6">
+            <div class="widget-two box--shadow2 b-radius--5 bg--white">
+            <i class="las la-times-circle overlay-icon text--danger"></i>
+    
+    <div class="widget-two__icon b-radius--5   bg--danger  ">
+        <i class="las la-times-circle"></i>
+    </div>
+
+    <div class="widget-two__content">
+        <h3>0</h3>
+        <p>Rejected Vehicle</p>
+    </div>
+
+            <a href="https://carrental.atechmedia.live/admin/vehicle/rejected" class="widget-two__btn btn btn-outline--danger">View All</a>
+    </div>
+
+        </div>
+    </div>
+
+
+    <div class="row mb-none-30 mt-30">
+        <div class="col-xl-6 mb-30">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Monthly Deposit & Withdraw Report (Last 12 Month)</h5>
+                    <div id="apex-bar-chart"> </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 mb-30">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Transactions Report (Last 30 Days)</h5>
+                    <div id="apex-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-none-30 mt-5">
+        <div class="col-xl-4 col-lg-6 mb-30">
+            <div class="card overflow-hidden">
+                <div class="card-body">
+                    <h5 class="card-title">Login By Browser (Last 30 days)</h5>
+                    <canvas id="userBrowserChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 mb-30">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Login By OS (Last 30 days)</h5>
+                    <canvas id="userOsChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 mb-30">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Login By Country (Last 30 days)</h5>
+                    <canvas id="userCountryChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+            </div><!-- bodywrapper__inner end -->
+        </div><!-- body-wrapper end -->
+    </div>
+
+
+
+
+
+
+
+    <script src="https://carrental.atechmedia.live/assets/global/js/jquery-3.7.1.min.js"></script>
+    <script src="https://carrental.atechmedia.live/assets/global/js/bootstrap.bundle.min.js"></script>
+    <script src="https://carrental.atechmedia.live/assets/admin/js/vendor/bootstrap-toggle.min.js"></script>
+    <script src="https://carrental.atechmedia.live/assets/admin/js/vendor/jquery.slimscroll.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://carrental.atechmedia.live/assets/global/css/iziToast.min.css">
+<script src="https://carrental.atechmedia.live/assets/global/js/iziToast.min.js"></script>
+
+<script>
+    "use strict";
+    function notify(status,message) {
+        if (typeof message == 'string') {
+            iziToast[status]({
+                message: message,
+                position: "topRight"
+            });
+        } else {
+            $.each(message, function(i, val) {
+                iziToast[status]({
+                    message: val,
+                    position: "topRight"
+                });
+            });
+        }
+    }
+</script>
+
+    
+    <script src="https://carrental.atechmedia.live/assets/global/js/nicEdit.js"></script>
+
+    <script src="https://carrental.atechmedia.live/assets/global/js/select2.min.js"></script>
+    <script src="https://carrental.atechmedia.live/assets/admin/js/app.js"></script>
+
+    
+    <script>
+        "use strict";
+        bkLib.onDomLoaded(function() {
+            $(".nicEdit").each(function(index) {
+                $(this).attr("id", "nicEditor" + index);
+                new nicEditor({
+                    fullPanel: true
+                }).panelInstance('nicEditor' + index, {
+                    hasPanel: true
+                });
+            });
+        });
+        (function($) {
+            $(document).on('mouseover ', '.nicEdit-main,.nicEdit-panelContain', function() {
+                $('.nicEdit-main').focus();
+            });
+        })(jQuery);
+    </script>
+
+        <script src="https://carrental.atechmedia.live/assets/admin/js/vendor/apexcharts.min.js"></script>
+    <script src="https://carrental.atechmedia.live/assets/admin/js/vendor/chart.js.2.8.0.js"></script>
+
+    <script>
+        "use strict";
+
+
+        var options = {
+            series: [{
+                name: 'Total Deposit',
+                data: [
+                                    ]
+            }, {
+                name: 'Total Withdraw',
+                data: [
+                                    ]
+            }],
+            chart: {
+                type: 'bar',
+                height: 450,
+                toolbar: {
+                    show: false
+                }
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '50%',
+                    endingShape: 'rounded'
+                },
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                show: true,
+                width: 2,
+                colors: ['transparent']
+            },
+            xaxis: {
+                categories: [],
+            },
+            yaxis: {
+                title: {
+                    text: "$",
+                    style: {
+                        color: '#7c97bb'
+                    }
+                }
+            },
+            grid: {
+                xaxis: {
+                    lines: {
+                        show: false
+                    }
+                },
+                yaxis: {
+                    lines: {
+                        show: false
+                    }
+                },
+            },
+            fill: {
+                opacity: 1
+            },
+            tooltip: {
+                y: {
+                    formatter: function(val) {
+                        return "$" + val + " "
+                    }
+                }
+            }
+        };
+        var chart = new ApexCharts(document.querySelector("#apex-bar-chart"), options);
+        chart.render();
+
+
+
+        var ctx = document.getElementById('userBrowserChart');
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ["Chrome","Handheld Browser","Safari"],
+                datasets: [{
+                    data: [14,4,1],
+                    backgroundColor: [
+                        '#ff7675',
+                        '#6c5ce7',
+                        '#ffa62b',
+                        '#ffeaa7',
+                        '#D980FA',
+                        '#fccbcb',
+                        '#45aaf2',
+                        '#05dfd7',
+                        '#FF00F6',
+                        '#1e90ff',
+                        '#2ed573',
+                        '#eccc68',
+                        '#ff5200',
+                        '#cd84f1',
+                        '#7efff5',
+                        '#7158e2',
+                        '#fff200',
+                        '#ff9ff3',
+                        '#08ffc8',
+                        '#3742fa',
+                        '#1089ff',
+                        '#70FF61',
+                        '#bf9fee',
+                        '#574b90'
+                    ],
+                    borderColor: [
+                        'rgba(231, 80, 90, 0.75)'
+                    ],
+                    borderWidth: 0,
+
+                }]
+            },
+            options: {
+                aspectRatio: 1,
+                responsive: true,
+                maintainAspectRatio: true,
+                elements: {
+                    line: {
+                        tension: 0 // disables bezier curves
+                    }
+                },
+                scales: {
+                    xAxes: [{
+                        display: false
+                    }],
+                    yAxes: [{
+                        display: false
+                    }]
+                },
+                legend: {
+                    display: false,
+                }
+            }
+        });
+
+
+
+        var ctx = document.getElementById('userOsChart');
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ["Windows 10","Android","Mac OS X","Linux"],
+                datasets: [{
+                    data: [8,6,4,1],
+                    backgroundColor: [
+                        '#ff7675',
+                        '#6c5ce7',
+                        '#ffa62b',
+                        '#ffeaa7',
+                        '#D980FA',
+                        '#fccbcb',
+                        '#45aaf2',
+                        '#05dfd7',
+                        '#FF00F6',
+                        '#1e90ff',
+                        '#2ed573',
+                        '#eccc68',
+                        '#ff5200',
+                        '#cd84f1',
+                        '#7efff5',
+                        '#7158e2',
+                        '#fff200',
+                        '#ff9ff3',
+                        '#08ffc8',
+                        '#3742fa',
+                        '#1089ff',
+                        '#70FF61',
+                        '#bf9fee',
+                        '#574b90'
+                    ],
+                    borderColor: [
+                        'rgba(0, 0, 0, 0.05)'
+                    ],
+                    borderWidth: 0,
+
+                }]
+            },
+            options: {
+                aspectRatio: 1,
+                responsive: true,
+                elements: {
+                    line: {
+                        tension: 0 // disables bezier curves
+                    }
+                },
+                scales: {
+                    xAxes: [{
+                        display: false
+                    }],
+                    yAxes: [{
+                        display: false
+                    }]
+                },
+                legend: {
+                    display: false,
+                }
+            },
+        });
+
+
+        // Donut chart
+        var ctx = document.getElementById('userCountryChart');
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ["Pakistan","Nigeria","Somalia","Kenya","Rwanda"],
+                datasets: [{
+                    data: [4,3,2,2,2],
+                    backgroundColor: [
+                        '#ff7675',
+                        '#6c5ce7',
+                        '#ffa62b',
+                        '#ffeaa7',
+                        '#D980FA',
+                        '#fccbcb',
+                        '#45aaf2',
+                        '#05dfd7',
+                        '#FF00F6',
+                        '#1e90ff',
+                        '#2ed573',
+                        '#eccc68',
+                        '#ff5200',
+                        '#cd84f1',
+                        '#7efff5',
+                        '#7158e2',
+                        '#fff200',
+                        '#ff9ff3',
+                        '#08ffc8',
+                        '#3742fa',
+                        '#1089ff',
+                        '#70FF61',
+                        '#bf9fee',
+                        '#574b90'
+                    ],
+                    borderColor: [
+                        'rgba(231, 80, 90, 0.75)'
+                    ],
+                    borderWidth: 0,
+
+                }]
+            },
+            options: {
+                aspectRatio: 1,
+                responsive: true,
+                elements: {
+                    line: {
+                        tension: 0 // disables bezier curves
+                    }
+                },
+                scales: {
+                    xAxes: [{
+                        display: false
+                    }],
+                    yAxes: [{
+                        display: false
+                    }]
+                },
+                legend: {
+                    display: false,
+                }
+            }
+        });
+
+        // apex-line chart
+        var options = {
+            chart: {
+                height: 450,
+                type: "area",
+                toolbar: {
+                    show: false
+                },
+                dropShadow: {
+                    enabled: true,
+                    enabledSeries: [0],
+                    top: -2,
+                    left: 0,
+                    blur: 10,
+                    opacity: 0.08
+                },
+                animations: {
+                    enabled: true,
+                    easing: 'linear',
+                    dynamicAnimation: {
+                        speed: 1000
+                    }
+                },
+            },
+            dataLabels: {
+                enabled: false
+            },
+            series: [{
+                    name: "Plus Transactions",
+                    data: [
+                                            ]
+                },
+                {
+                    name: "Minus Transactions",
+                    data: [
+                                            ]
+                }
+            ],
+            fill: {
+                type: "gradient",
+                gradient: {
+                    shadeIntensity: 1,
+                    opacityFrom: 0.7,
+                    opacityTo: 0.9,
+                    stops: [0, 90, 100]
+                }
+            },
+            xaxis: {
+                categories: [
+                                    ]
+            },
+            grid: {
+                padding: {
+                    left: 5,
+                    right: 5
+                },
+                xaxis: {
+                    lines: {
+                        show: false
+                    }
+                },
+                yaxis: {
+                    lines: {
+                        show: false
+                    }
+                },
+            },
+        };
+
+        var chart = new ApexCharts(document.querySelector("#apex-line"), options);
+
+        chart.render();
+    </script>
+    <script>
+        if ($('li').hasClass('active')) {
+            $('#sidebar__menuWrapper').animate({
+                scrollTop: eval($(".active").offset().top - 320)
+            }, 500);
+        }
+    </script>
+
+
+</body>
+
+</html>
